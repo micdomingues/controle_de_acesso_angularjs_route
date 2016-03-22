@@ -1,0 +1,7 @@
+<div class="container">
+
+    <h2 ng-show="$root.usuarioLogado == null">Seja bem vindo. Logue para ter acesso ao conteúdo.</h2>
+    <br/>
+    <h2 ng-show="$root.usuarioLogado != null">Seja bem vindo {{$root.usuarioLogado.username}}</h2>
+
+</div>
