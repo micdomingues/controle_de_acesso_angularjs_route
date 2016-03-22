@@ -1,0 +1,24 @@
+<div class="container" style="padding-top:10px;">
+    <h2> Usuários cadastrados </h2> <br/>
+
+    <table style="width:100%"  class="table table-hover">
+        <thead>
+        <tr>
+            <th><h3>Nome</h3></th>
+            <th><h3>Tipo</h3></th>
+            <th><h3>Ações</h3></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="usuario in usuarios">
+            <td>{{usuario.nome}}</td>
+            <td>{{usuario.admin == true ? 'Administrador' : 'Cliente'}}</td>
+            <td> <button type="button" class="btn btn-danger">Excluir</button> </td>
+        </tr>
+        </tbody>
+
+    </table>
+</div>
+
+
+</div>

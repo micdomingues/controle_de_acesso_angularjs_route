@@ -1,0 +1,23 @@
+<div class="container" style="padding-top:10px;">
+    <h2> Livros existentes </h2> <br/>
+
+    <table style="width:100%"  class="table table-hover">
+        <thead>
+        <tr>
+            <th><h3>Nome do Livro</h3></th>
+            <th><h3>Autor(a)</h3></th>
+            <th><h3>Ações</h3></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="livro in livros">
+            <td>{{livro.nome}}</td>
+            <td>{{livro.autor}}</td>
+            <td ng-show="$root.usuarioLogado.admin == true"> <button type="button" class="btn btn-danger">Excluir</button> </td>
+            <td ng-show="$root.usuarioLogado.admin == false"> <button type="button" class="btn btn-success">Comprar</button> </td>
+        </tr>
+        </tbody>
+
+    </table>
+
+</div>
